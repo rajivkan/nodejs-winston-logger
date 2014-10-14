@@ -1,0 +1,14 @@
+{
+  "name": "Logger",
+  "version": "0.0.0",
+  "description": "Logger Project",
+  "main": "app.js",
+  "dependencies": {
+    "jade": "1.1.5",
+    "express": "~3.2.5",
+    "winston": "~0.7.1"
+  },
+  "repository": "",
+  "author": "Rajiv Ranjan",
+  "private": true
+}
