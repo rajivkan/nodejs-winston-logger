@@ -19,3 +19,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', function (req, res) {
   res.send('<html><body><h1>Hello World</h1></body></html>');
 });
+
+app.get('/getUser', function(req, res){
+	return res.send("testUser");
+});

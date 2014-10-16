@@ -10,7 +10,8 @@
     "grunt": "latest",
     "grunt-mocha": "~0.4.6",
     "mocha": "~1.14.0",
-    "chai": "~1.8.1"
+    "chai": "~1.8.1",
+    "supertest": "*"
   },
   "repository": "",
   "author": "Rajiv Ranjan",
