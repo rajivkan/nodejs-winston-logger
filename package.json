@@ -6,7 +6,11 @@
   "dependencies": {
     "jade": "1.1.5",
     "express": "~3.2.5",
-    "winston": "~0.7.1"
+    "winston": "~0.7.1",
+    "grunt": "latest",
+    "grunt-mocha": "~0.4.6",
+    "mocha": "~1.14.0",
+    "chai": "~1.8.1"
   },
   "repository": "",
   "author": "Rajiv Ranjan",
