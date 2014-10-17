@@ -6,13 +6,19 @@ var http = require('http'),
     var app = express();
     app.set('views', path.join(__dirname, 'views'));
 	app.set('view engine', 'jade');
-    app.use(express.bodyParser()); // <-- add
+    app.use(express.bodyParser());
     var server = http.createServer(app);
  
 server.listen(3000);
 
-logger.info("Express server listening on port 3000");
-logger.error('This is test error log', "app.js")
+try{
+    logger.info("Express server listening on port 3000");   
+    aller("sds");
+}
+catch(err){
+    logger.error(err.stack)
+}
+
 
 app.use(express.static(path.join(__dirname, 'public')));
  

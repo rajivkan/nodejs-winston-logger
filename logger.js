@@ -9,7 +9,10 @@ var log = function(level, title, message) {
     message = title +': '+message;
   }
 
-  winston.log(level, message)
+  winston.remove(winston.transports.DailyRotateFile);
+  winston.add(winston.transports.DailyRotateFile, { filename: './logs/development_'+ level +'.log', json: false });
+  
+  winston.log(level, message);
 }
 
 module.exports = function() {
