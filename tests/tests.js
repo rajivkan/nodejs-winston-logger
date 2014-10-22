@@ -1,18 +1,25 @@
-var expect = chai.expect;
-describe('Sum', function(){
-  describe('#sum 2 numbers', function(){
-    it('should return 4 when add 2+2', function(){
-      chai.assert.equal(4, (2+2));
+var mocha = require('mocha')
+  , chai = require('chai')
+  , sinon = require('sinon')
+
+require('mocha-as-promised')(mocha)
+chai.should()
+chai.use(require('chai-as-promised'))
+chai.use(require('sinon-chai'))
+
+
+  var logger = require('../logger.js')()
+
+describe('Test: Logger', function() {
+	
+	 it('info', function(){
+	 	logger.info("test info");
+    });
+	 it('debug', function(){
+	 	logger.debug("test debug");
     });
 
-    it('substract 2 numbers', function(done){
-    	var substract = function(a, b){
-    		return (a-b);
-    	}
-
-		expect(substract(5,4)).to.equal(1);
-  		done();
+	 it('error', function(){
+	 	logger.error("test error");
     });
-
-  });
 });

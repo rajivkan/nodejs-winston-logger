@@ -1,8 +1,3 @@
-function startInterval(fn) {
-	fn();
-	return setInterval.apply(this, arguments);
-}
-
-if (typeof module !== 'undefined') {
-	module.exports = startInterval;
+function test(fn) {
+	console.log("call");
 }
