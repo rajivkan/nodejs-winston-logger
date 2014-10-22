@@ -20,9 +20,6 @@ module.exports = function() {
     info: function(message, title) {
       log('info', title, message)
     },
-    debug: function(message, title) {
-      log('debug', title, message)
-    },
     error: function(message, title) {
       log('error', title, message)
     }

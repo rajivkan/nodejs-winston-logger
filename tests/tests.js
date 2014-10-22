@@ -15,9 +15,6 @@ describe('Test: Logger', function() {
 	 it('info', function(){
 	 	logger.info("test info");
     });
-	 it('debug', function(){
-	 	logger.debug("test debug");
-    });
 
 	 it('error', function(){
 	 	logger.error("test error");
