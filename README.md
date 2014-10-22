@@ -13,5 +13,4 @@ $ node app.js
 
 
 -- to run test case
-
 $ mocha tests/tests.js
