@@ -7,6 +7,11 @@ Flow below steps:
 
 git clone https://github.com/rajivkan/nodejs-winston-logger.git
 
-npm install
+$ npm install
 
-node app.js
+$ node app.js
+
+
+-- to run test case
+
+$ mocha tests/tests.js
