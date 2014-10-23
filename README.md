@@ -18,5 +18,7 @@ $ mocha tests/<filename>
 
 ex: $ mocha tests/logger-test.js
 
+
 -- to run all test cases
+<br>
 $ mocha --reporter spec tests/*.js
