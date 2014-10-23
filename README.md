@@ -14,9 +14,7 @@ $ node app.js
 
 -- to run specific test case file
 <br>
-$ mocha tests/<filename> 
-<br>
-ex: $ mocha tests/logger-test.js
+$ mocha tests/logger-test.js
 
 
 -- to run all test cases
