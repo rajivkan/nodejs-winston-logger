@@ -1,7 +1,7 @@
 nodejs-winston-logger
 =====================
 
-maintain rotate logging information from NodeJS applications
+Maintain rotate logging information using NodeJS applications
 
 Flow below steps:
 
